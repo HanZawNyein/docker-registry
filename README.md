@@ -16,6 +16,14 @@
 
 `http://<public-ip>:80`
 
-default username and password 
-username - admin
-password - Harbor12345
+# default username and password 
+username - `admin`
+password - `Harbor12345`
+
+
+# Usage
+`docker login <your-public-ip>`
+
+`docker tag nginx:latest <your-public-ip>/myproject/nginx:latest`
+
+`docker push <your-public-ip>/myproject/nginx:latest`
